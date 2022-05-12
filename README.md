@@ -17,10 +17,12 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 1. Ex 1.1: 10/5/22
 2. Ex 1.2: 10/5/22
 
-**part1b** 10/5/22
+**part1b** 10/5/22 - 12/5/22
 
 1. Ex 1.3: 10/5/22
 2. Ex 1.4: 10/5/22
 3. Ex 1.5: 10/5/22
 
-**part1c** 10/5/22 - *present*
+**part1c** 12/5/22
+
+**part1d** 12/5/22 - *present*
