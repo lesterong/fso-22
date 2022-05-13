@@ -36,3 +36,5 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 7. Ex 1.12: 12/5/22
 8. Ex 1.13: 12/5/22
 9. Ex 1.14: 12/5/22 
+
+**part2a** 13/5/22 - *present*
