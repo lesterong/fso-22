@@ -38,3 +38,5 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 9. Ex 1.14: 12/5/22 
 
 **part2a** 13/5/22 - *present*
+
+1. Ex 2.1: 15/5/22
