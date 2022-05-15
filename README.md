@@ -37,8 +37,12 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 8. Ex 1.13: 12/5/22
 9. Ex 1.14: 12/5/22 
 
-**part2a** 13/5/22 - *present*
+**part2a** 13/5/22 - 15/5/22
 
 1. Ex 2.1: 15/5/22
 2. Ex 2.2: 15/5/22
 3. Ex 2.3: 15/5/22
+4. Ex 2.4: 15/5/22
+5. Ex 2.5: 15/5/22
+
+**part2b** 15/5/22 - *present*
