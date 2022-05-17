@@ -48,3 +48,4 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 **part2b** 15/5/22 - *present*
 
 1. Ex 2.6: 17/5/22
+2. Ex 2.7: 17/5/22
