@@ -50,3 +50,4 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 1. Ex 2.6: 17/5/22
 2. Ex 2.7: 17/5/22
 3. Ex 2.8: 17/5/22
+4. Ex 2.9: 17/5/22
