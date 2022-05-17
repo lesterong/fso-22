@@ -45,9 +45,12 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 4. Ex 2.4: 15/5/22
 5. Ex 2.5: 15/5/22
 
-**part2b** 15/5/22 - *present*
+**part2b** 15/5/22 - 17/5/22
 
 1. Ex 2.6: 17/5/22
 2. Ex 2.7: 17/5/22
 3. Ex 2.8: 17/5/22
 4. Ex 2.9: 17/5/22
+5. Ex 2.10: 17/5/22
+
+**part2c** 17/5/22 - *present*
