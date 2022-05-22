@@ -54,3 +54,5 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 5. Ex 2.10: 17/5/22
 
 **part2c** 17/5/22 - *present*
+
+1. Ex 2.11: 22/5/22
