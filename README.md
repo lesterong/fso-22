@@ -57,3 +57,4 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 
 1. Ex 2.11: 22/5/22
 2. Ex 2.12: 23/5/22
+3. Ex 2.13: 23/5/22

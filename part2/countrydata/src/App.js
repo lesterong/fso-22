@@ -6,6 +6,7 @@ import Filter from "./components/Filter"
 const App = () => {
   const [countries, setCountries] = useState([])
   const [query, setQuery] = useState('')
+  const [showDetails, setShowDetails] = useState(false)
   
   const hook = () => {
     axios
@@ -20,8 +21,16 @@ const App = () => {
 
   return (
     <>
-      <Filter query={query} setQuery={q => setQuery(q)} />
-      <Countries countries={countriesToShow} />
+      <Filter
+        query={query}
+        setQuery={q => setQuery(q)}
+        setShowDetails={setShowDetails}
+      />
+      <Countries
+        countries={countriesToShow}
+        showDetails={showDetails}
+        setShowDetails={setShowDetails}
+      />
     </>
   )
 }

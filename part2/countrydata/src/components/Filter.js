@@ -1,10 +1,13 @@
-const Searchbar = ({ query, setQuery }) => {
+const Searchbar = ({ query, setQuery, setShowDetails }) => {
   return (
     <>
       find countries
       <input
         value={query}
-        onChange={e => setQuery(e.target.value)}
+        onChange={e => {
+          setQuery(e.target.value)
+          setShowDetails(false)
+        }}
       />
     </>
   )
