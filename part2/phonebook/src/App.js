@@ -45,6 +45,12 @@ const App = () => {
     ? persons.filter(person => person.name.toLowerCase().includes(query.toLowerCase()))
     : persons
 
+  const deletePerson = (id) => {
+    personService
+      .remove(id)
+      .then(setPersons(persons.filter(person => person.id !== id)))
+  }
+
   return (
     <div>
       <h2>Phonebook</h2>
@@ -58,7 +64,7 @@ const App = () => {
         handleSubmit={handleSubmit}
       />
       <h3>Numbers</h3>
-      <Persons persons={personsToShow} />
+      <Persons deletePerson={deletePerson} persons={personsToShow} />
     </div>
   )
 }

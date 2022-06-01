@@ -64,3 +64,4 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 
 1. Ex 2.15: 1/6/22
 2. Ex 2.16: 1/6/22
+3. Ex 2.17: 1/6/22
