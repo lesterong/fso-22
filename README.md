@@ -72,4 +72,15 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 1. Ex 2.19: 2/6/22
 2. Ex 2.20: 2/6/22
 
-**part3a** 2/6/22 - *present*
+**part3a** 2/6/22 - 4/6/22
+
+1. Ex 3.1: 4/6/22
+2. Ex 3.2: 4/6/22
+3. Ex 3.3: 4/6/22
+4. Ex 3.4: 4/6/22
+5. Ex 3.5: 4/6/22
+6. Ex 3.6: 4/6/22
+7. Ex 3.7: 4/6/22
+8. Ex 3.8: 4/6/22
+
+**part3b** 4/6/22 - *present*
