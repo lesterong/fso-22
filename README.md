@@ -92,3 +92,5 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 **part3c** 15/7/22 - *present*
 
 1. Ex 3.12: 25/7/22
+2. Ex 3.13: 31/7/22
+3. Ex 3.14: 31/7/22
