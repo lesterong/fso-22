@@ -89,8 +89,14 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 2. Ex 3.10: 15/7/22
 3. Ex 3.11: 15/7/22
 
-**part3c** 15/7/22 - *present*
+**part3c** 15/7/22 - 1/8/22
 
 1. Ex 3.12: 25/7/22
 2. Ex 3.13: 31/7/22
 3. Ex 3.14: 31/7/22
+4. Ex 3.15: 1/8/22
+5. Ex 3.16: 1/8/22
+6. Ex 3.17: 1/8/22
+7. Ex 3.18: 1/8/22
+
+**part3cd** 1/8/22 - *present*
