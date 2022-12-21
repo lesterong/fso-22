@@ -3,6 +3,7 @@ import personService from './services/persons'
 import Filter from './components/Filter'
 import Persons from './components/Persons'
 import PersonForm from './components/PersonForm'
+import Notification from './components/Notification'
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -17,6 +18,20 @@ const App = () => {
     number: ''
   }
   const [newDetails, setNewDetails] = useState(initDetails)
+
+  const [successMessage, setSuccessMessage] = useState(null);
+  const [failureMessage, setFailureMessage] = useState(null);
+
+
+  const notifySuccess = (message) => {
+    setSuccessMessage(message)
+    setTimeout(() => setSuccessMessage(null), 5000)
+  }
+
+  const notifyFailure = (message) => {
+    setFailureMessage(message)
+    setTimeout(() => setFailureMessage(null), 5000)
+  }
 
   const handleInputChange = (e) => {
     setNewDetails({ ...newDetails, [e.target.id]: e.target.value })
@@ -37,8 +52,12 @@ const App = () => {
         personService
           .update(personToUpdate.id, personObj)
           .then(returnedPerson => {
+            notifySuccess(`Updated ${returnedPerson.name}`)
             setPersons(persons.map(p => p.id === personToUpdate.id ? returnedPerson : p))
             setNewDetails(initDetails)
+          })
+          .catch(() => {
+            setFailureMessage(`Information of ${personToUpdate.name} was already removed from server`)
           })
       }
       return
@@ -47,6 +66,7 @@ const App = () => {
     personService
       .create(personObj)
       .then(returnedPerson => {
+        notifySuccess(`Added ${returnedPerson.name}`)
         setNewDetails(initDetails)
         setPersons(persons.concat(returnedPerson))
       })
@@ -57,7 +77,11 @@ const App = () => {
       personService
         .remove(person.id)
         .then(() => {
+          setSuccessMessage(`Deleted ${person.name}`)
           setPersons(persons.filter(p => p.id !== person.id))
+        })
+        .catch(() => {
+          setFailureMessage(`Information of ${person.name} was already removed from server`)
         })
     }
   }
@@ -69,6 +93,9 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
+      <Notification message={successMessage} />
+      <Notification message={failureMessage} />
+
       <Filter query={query} handleQuery={handleQuery} />
 
       <h3>add a new</h3>

@@ -69,8 +69,8 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 
 **part2e** 1/6/22 - 2/6/22
 
-1. Ex 2.19: 2/6/22
-2. Ex 2.20: 2/6/22
+1. Ex 2.19: 2/6/22 (Redo: 21/12/22)
+2. Ex 2.20: 2/6/22 (Redo: 21/12/22)
 
 **part3a** 2/6/22 - 4/6/22
 
@@ -99,4 +99,4 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 6. Ex 3.17: 1/8/22
 7. Ex 3.18: 1/8/22
 
-**part3cd** 1/8/22 - *present*
+**part3d** 1/8/22 - *present*
