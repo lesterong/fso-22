@@ -62,10 +62,10 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 
 **part2d** 25/5/22 - *present*
 
-1. Ex 2.15: 1/6/22
-2. Ex 2.16: 1/6/22
-3. Ex 2.17: 1/6/22
-4. Ex 2.18: 1/6/22
+1. Ex 2.15: 1/6/22 (Redo: 21/12/22)
+2. Ex 2.16: 1/6/22 (Redo: 21/12/22)
+3. Ex 2.17: 1/6/22 (Redo: 21/12/22)
+4. Ex 2.18: 1/6/22 (Redo: 21/12/22)
 
 **part2e** 1/6/22 - 2/6/22
 

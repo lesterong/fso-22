@@ -1,17 +1,16 @@
 import { useEffect, useState } from 'react'
-import axios from 'axios'
+import personService from './services/persons'
 import Filter from './components/Filter'
 import Persons from './components/Persons'
 import PersonForm from './components/PersonForm'
 
 const App = () => {
   const [persons, setPersons] = useState([])
-  const hook = () => {
-    axios
-      .get('http://localhost:3001/persons')
-      .then(response => setPersons(response.data))
-  }
-  useEffect(hook, [])
+  useEffect(() => {
+    personService
+      .getAll()
+      .then(initialPersons => setPersons(initialPersons))
+    }, [])
 
   const initDetails = {
     name: '',
@@ -26,18 +25,41 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (persons.map(p => p.name).includes(newDetails.name.trim())) {
-      alert(`${newDetails.name.trim()} is already added to phonebook`)
-      return
-    }
     const personObj = {
       name: newDetails.name.trim(),
       number: newDetails.number,
       id: persons.length + 1
     }
 
-    setNewDetails(initDetails)
-    setPersons(persons.concat(personObj))
+    if (persons.map(p => p.name).includes(newDetails.name.trim())) {
+      if (window.confirm(`${newDetails.name.trim()} is already added to phonebook, replace the old number with a new one?`)) {
+        const personToUpdate = persons.find(p => p.name === newDetails.name)
+        personService
+          .update(personToUpdate.id, personObj)
+          .then(returnedPerson => {
+            setPersons(persons.map(p => p.id === personToUpdate.id ? returnedPerson : p))
+            setNewDetails(initDetails)
+          })
+      }
+      return
+    }
+    
+    personService
+      .create(personObj)
+      .then(returnedPerson => {
+        setNewDetails(initDetails)
+        setPersons(persons.concat(returnedPerson))
+      })
+  }
+
+  const handleDelete = (person) => () => {
+    if (window.confirm(`Delete ${person.name}?`)) {
+      personService
+        .remove(person.id)
+        .then(() => {
+          setPersons(persons.filter(p => p.id !== person.id))
+        })
+    }
   }
 
   const [query, setQuery] = useState('')
@@ -53,7 +75,7 @@ const App = () => {
       <PersonForm newDetails={newDetails} handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
 
       <h3>Numbers</h3>
-      <Persons persons={personsToShow} />
+      <Persons persons={personsToShow} handleDelete={handleDelete} />
     </div>
   )
 }
