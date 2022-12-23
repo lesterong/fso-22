@@ -57,7 +57,7 @@ const App = () => {
             setNewDetails(initDetails)
           })
           .catch(() => {
-            setFailureMessage(`Information of ${personToUpdate.name} was already removed from server`)
+            notifyFailure(`Information of ${personToUpdate.name} was already removed from server`)
           })
       }
       return
@@ -81,7 +81,7 @@ const App = () => {
           setPersons(persons.filter(p => p.id !== person.id))
         })
         .catch(() => {
-          setFailureMessage(`Information of ${person.name} was already removed from server`)
+          notifyFailure(`Information of ${person.name} was already removed from server`)
         })
     }
   }
