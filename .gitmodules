@@ -1,0 +1,3 @@
+[submodule "part3/fso-ex3"]
+	path = part3/fso-ex3
+	url = git@github.com:lesterong/fso-ex3.git
