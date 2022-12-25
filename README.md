@@ -85,9 +85,9 @@ My attempt at the [Full Stack Open](https://www.fullstackopen.com/en).
 
 **part3b** 4/6/22 - 15/7/22
 
-1. Ex 3.9: 15/7/22
-2. Ex 3.10: 15/7/22
-3. Ex 3.11: 15/7/22
+1. Ex 3.9: 15/7/22 (Redo: 25/12/22)
+2. Ex 3.10: 15/7/22 (Redo: 25/12/22)
+3. Ex 3.11: 15/7/22 (Redo: 25/12/22)
 
 **part3c** 15/7/22 - 1/8/22
 
